@@ -39,7 +39,7 @@ export const MenuItem = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
-          {active === item && (
+          {active === item && children && (
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
@@ -90,7 +90,7 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <a href={href} className="flex items-center space-x-4 p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">
+    <a href={href} className="flex items-center space-x-4">
       <Image
         src={src}
         width={140}
@@ -110,12 +110,10 @@ export const ProductItem = ({
   );
 };
 
-import { AnchorHTMLAttributes, ReactNode } from "react";
-
 export const HoveredLink = ({
   children,
   ...rest
-}: AnchorHTMLAttributes<HTMLAnchorElement> & { children: ReactNode }) => {
+}: React.PropsWithChildren<React.AnchorHTMLAttributes<HTMLAnchorElement>>) => {
   return (
     <a
       {...rest}
