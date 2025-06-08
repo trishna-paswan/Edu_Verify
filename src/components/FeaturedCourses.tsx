@@ -34,7 +34,7 @@ function FeaturedCourses() {
                             <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
                                 <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">{course.title}</p>
                                 <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">{course.description}</p>
-                            <Link href={`/courses/${course.slug}`} className='px-4 py-2 text-sm font-medium text-white bg-teal-600 rounded-md hover:bg-teal-700 transition-colors duration-300'>
+                            <Link href={`/courses/${course.slug}`} className='text-sm text-white hover:text-teal-500 mt-6'>
                                 Learn More
                                 </Link>
                             </div>
