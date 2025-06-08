@@ -4,13 +4,13 @@ import courseData from '../data/music_courses.json'
 import { BackgroundGradient } from './ui/background-gradient'
 
 interface Course {
-        id: number,
-        title: string,
-        slug: string,
-        description: string,
-        price: number,
-        instructor: string,
-        isFeatured: boolean,
+    id: number,
+    title: string,
+    slug: string,
+    description: string,
+    price: number,
+    instructor: string,
+    isFeatured: boolean,
 }
 
 function FeaturedCourses() {
