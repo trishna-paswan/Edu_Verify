@@ -12,11 +12,11 @@ const musicSchoolContent = [
         content: (
         <div className="flex h-full w-full items-center justify-center text-white">
             <img
-            src="https://assets.grok.com/users/bdee2d2c-abaa-4277-b449-e66902f589a7/generated/glpaddKnH9b1rDl1/image.jpg"
+            src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=600"
             width={300}
             height={300}
             className="h-full w-full object-cover rounded-md"
-            alt="linear board demo"
+            alt="Discover Your Sound with Us: A Personal Journey in Music Mastery"
             />
         </div>
         ),
@@ -28,11 +28,11 @@ const musicSchoolContent = [
                 content: (
         <div className="flex h-full w-full items-center justify-center text-white">
             <img
-            src="https://assets.grok.com/users/bdee2d2c-abaa-4277-b449-e66902f589a7/generated/Auv51o7pmGG4PvaK/image.jpg"
+            src="https://images.pexels.com/photos/6862365/pexels-photo-6862365.jpeg?auto=compress&cs=tinysrgb&w=600"
             width={300}
             height={300}
             className="h-full w-full object-cover rounded-md"
-            alt="linear board demo"
+            alt="Live Feedback & Engagement"
             />
         </div>
         ),
@@ -44,11 +44,11 @@ const musicSchoolContent = [
         content: (
         <div className="flex h-full w-full items-center justify-center text-white">
             <img
-            src="https://assets.grok.com/users/bdee2d2c-abaa-4277-b449-e66902f589a7/generated/aR4heJETLlDvawBI/image.jpg"
+            src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=600"
             width={300}
             height={300}
             className="h-full w-full object-cover rounded-md"
-            alt="linear board demo"
+            alt="Cutting-Edge Curriculum"
             />
         </div>
         ),
@@ -60,11 +60,11 @@ const musicSchoolContent = [
         content: (
         <div className="flex h-full w-full items-center justify-center text-white">
             <img
-            src="https://assets.grok.com/users/bdee2d2c-abaa-4277-b449-e66902f589a7/generated/LtTaopQBYsRC7iaz/image.jpg"
+            src="https://images.pexels.com/photos/7149165/pexels-photo-7149165.jpeg?auto=compress&cs=tinysrgb&w=600"
             width={300}
             height={300}
             className="h-full w-full object-cover rounded-md"
-            alt="linear board demo"
+            alt="Limitless Learning Opportunities"
             />
         </div>
         ),
