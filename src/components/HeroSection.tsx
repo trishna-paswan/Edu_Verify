@@ -1,37 +1,45 @@
-import Link from 'next/link'
-import React from 'react'
-import { Spotlight } from './ui/Spotlight'
-import { Button } from "./ui/moving-border";
+import Link from 'next/link';
+import React from 'react';
+import { Spotlight } from './ui/Spotlight';
+import { Button } from './ui/moving-border';
 
 function HeroSection() {
   return (
     <div
-    className='h-auto md:h-[47rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0'
+      className="h-auto md:h-[47rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0"
     >
-        <Spotlight
+      {/* Spotlight Effect */}
+      <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
-        <div className='p-4 relative z-10 w-full text-center'>
-            <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                Master The Art Of Music
-            </h1>
-            <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
-                Dive into our comprehensive music courses and transform your musical journey today. Whether you&apos;re a beginner or looking to refine your skills, join us to unlock your true potential.
-            </p>
-            <div className='mt-4 text-neutral-300'>
-                <Link href={"/courses"}>
-                    <Button
-                    borderRadius='1.75rem'
-                    className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
-                    >
-                        Explore Courses
-                    </Button>
-                </Link>
-            </div>
+
+      {/* Hero Text */}
+      <div className="p-4 relative z-10 w-full text-center">
+        <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+          EduVerify
+        </h1>
+        <h2 className="mt-2 md:mt-4 text-2xl md:text-4xl font-semibold text-neutral-200">
+          The Academic Credentials Authenticity Validator
+        </h2>
+        <p className="mt-6 font-normal text-base md:text-lg text-neutral-300 max-w-xl mx-auto">
+          Secure your credentials, verify with confidence, and track authenticity in real-time.
+        </p>
+
+        {/* Call-to-Action Button */}
+        <div className="mt-8">
+          <Link href="/features">
+            <Button
+              borderRadius="1.75rem"
+              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer px-8 py-3 text-lg font-medium"
+            >
+              Explore Us
+            </Button>
+          </Link>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;

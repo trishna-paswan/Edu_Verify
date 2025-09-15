@@ -4,79 +4,63 @@
 import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
-const musicSchoolContent = [
+const eduVerifyContent = [
     {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
-      description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
+        title: 'Secure Credential Verification',
+        description:
+            'EduVerify ensures that all academic documents are authenticated using blockchain and AI-based checks, giving students, institutions, and recruiters complete confidence.',
         content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
-            <img
-            src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=600"
-            width={300}
-            height={300}
-            className="h-full w-full object-cover rounded-md"
-            alt="Discover Your Sound with Us: A Personal Journey in Music Mastery"
-            />
-        </div>
+            <div className="flex h-full w-full items-center justify-center text-white">
+                <img
+                    src="https://images.pexels.com/photos/5900161/pexels-photo-5900161.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover rounded-md"
+                    alt="Secure Credential Verification"
+                />
+            </div>
         ),
     },
     {
-      title: 'Live Feedback & Engagement',
-      description:
-        'Immerse yourself in an interactive learning experience where feedback is immediate, just like real-time changes in a collaborative project. This approach enhances your understanding and mastery of music concepts and performance techniques.',
-                content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
-            <img
-            src="https://images.pexels.com/photos/6862365/pexels-photo-6862365.jpeg?auto=compress&cs=tinysrgb&w=600"
-            width={300}
-            height={300}
-            className="h-full w-full object-cover rounded-md"
-            alt="Live Feedback & Engagement"
-            />
-        </div>
-        ),
-    },
-    {
-      title: 'Cutting-Edge Curriculum',
-      description:
-        'Our curriculum is continuously updated to include the latest music education trends and technologies, ensuring you’re always learning with the most current and effective methods. Say goodbye to outdated materials and welcome an education that evolves with the industry.',
+        title: 'DigiLocker Integration',
+        description:
+            'Import government-verified documents seamlessly, reducing manual effort and enhancing trust across all stakeholders.',
         content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
-            <img
-            src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=600"
-            width={300}
-            height={300}
-            className="h-full w-full object-cover rounded-md"
-            alt="Cutting-Edge Curriculum"
-            />
-        </div>
+            <div className="flex h-full w-full items-center justify-center text-white">
+                <img
+                    src="https://images.pexels.com/photos/5473959/pexels-photo-5473959.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover rounded-md"
+                    alt="DigiLocker Integration"
+                />
+            </div>
         ),
     },
     {
-      title: 'Limitless Learning Opportunities',
-      description:
-        'With our expansive resource library and dynamic course offerings, you’ll never find yourself without something new to explore. Our platform provides continuous opportunities for growth, ensuring your musical skills are always advancing.',
+        title: 'AI-based Fraud Detection',
+        description:
+            'Our advanced AI system analyzes documents to detect tampering or forgery in real-time, ensuring maximum authenticity and reliability.',
         content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
-            <img
-            src="https://images.pexels.com/photos/7149165/pexels-photo-7149165.jpeg?auto=compress&cs=tinysrgb&w=600"
-            width={300}
-            height={300}
-            className="h-full w-full object-cover rounded-md"
-            alt="Limitless Learning Opportunities"
-            />
-        </div>
+            <div className="flex h-full w-full items-center justify-center text-white">
+                <img
+                    src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover rounded-md"
+                    alt="AI-based Fraud Detection"
+                />
+            </div>
         ),
     },
-  ];
+];
 
 function WhyChooseUs() {
-  return (
-    <div>
-        <StickyScroll content={musicSchoolContent} />
-    </div>
-  )
+    return (
+        <div>
+            <StickyScroll content={eduVerifyContent} />
+        </div>
+    );
 }
 
-export default WhyChooseUs
+export default WhyChooseUs;

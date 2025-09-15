@@ -2,39 +2,47 @@
 import { cn } from "@/utils/utils";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
-const musicSchoolTestimonials = [
+// EduVerify testimonials / feature highlights
+const eduVerifyHighlights = [
     {
         quote:
-        'Joining the music school transformed my understanding of music and helped me to truly discover my own sound. The instructors are world-class!',
-        name: 'Alex Johnson',
-        title: 'Guitar Student',
+        'My uploaded certificates are now easily trackable and shareable with employers. The verification status is always clear!',
+        name: 'Rohit Sharma',
+        title: 'Student',
     },
     {
         quote:
-        "The community and support at this school are unmatched. I've grown not just as a pianist, but also as a performer, thanks to their comprehensive approach.",
-        name: 'Samantha Lee',
-        title: 'Piano Student',
+        'Issuing certificates has never been simpler. The AI checks and blockchain integration ensure authenticity at every step.',
+        name: 'Dr. Priya Nair',
+        title: 'Institution Admin',
     },
     {
         quote:
-        "This school offered me the tools and confidence to take my singing to the next level. I'm endlessly grateful for the personalized coaching.",
-        name: 'Michael Chen',
-        title: 'Vocal Student',
+        'Verifying candidates’ documents is now reliable and quick. The AI forgery detection and DigiLocker integration make it seamless.',
+        name: 'Sanjay Mehta',
+        title: 'Recruiter',
     },
     {
         quote:
-        'As a violinist, finding the right mentor can be challenging, but this school matched me with a teacher who truly understands my goals and challenges.',
-        name: 'Emily Taylor',
-        title: 'Violin Student',
+        'I love the analytics dashboard! I can see how many times my certificates were verified and track activity timelines.',
+        name: 'Anjali Verma',
+        title: 'Student',
     },
     {
         quote:
-        'The production courses here opened my eyes to the intricacies of music production. Highly recommend for any aspiring producers!',
-        name: 'Chris Morales',
-        title: 'Music Production Student',
+        'Fraud detection alerts save us a lot of time and give confidence in issuing documents. EduVerify is a game-changer for institutions.',
+        name: 'Prof. Karthik Reddy',
+        title: 'Institution Admin',
     },
-    ];
-function MusicSchoolTestimonials() {
+    {
+        quote:
+        'The final authenticity badge (Green/Red) makes verification extremely fast for recruiters. No more manual checks!',
+        name: 'Priya Gupta',
+        title: 'Recruiter',
+    },
+];
+
+function EduVerifyHighlights() {
     return (
     <div className="h-[47rem] w-full bg-black bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
         <div
@@ -46,18 +54,18 @@ function MusicSchoolTestimonials() {
         )}
         />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-        <h2 className="text-3xl font-bold text-center mb-8 z-10 text-neutral-50 m-6">Hear Our Harmony: Voices of Success</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 z-10 text-neutral-50 m-6">Why EduVerify?</h2>
         <div className="flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8">
             <div className="w-full max-w-6xl">
             <InfiniteMovingCards
-                items={musicSchoolTestimonials}
+                items={eduVerifyHighlights}
                 direction="right"
                 speed="slow"
-        />
+            />
             </div>
         </div>
     </div>
     )
 }
 
-export default MusicSchoolTestimonials
+export default EduVerifyHighlights;
