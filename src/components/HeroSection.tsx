@@ -6,7 +6,15 @@ import { Button } from './ui/moving-border';
 function HeroSection() {
   return (
     <div
-      className="h-auto md:h-[47rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0"
+      className="
+        h-screen               /* full viewport height */
+        w-full
+        rounded-md
+        flex flex-col items-center justify-center
+        relative overflow-hidden
+        mx-auto
+        px-4
+      "
     >
       {/* Spotlight Effect */}
       <Spotlight
@@ -15,15 +23,17 @@ function HeroSection() {
       />
 
       {/* Hero Text */}
-      <div className="p-4 relative z-10 w-full text-center">
-        <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+      <div className="relative z-10 w-full text-center">
+        <h1 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
           EduVerify
         </h1>
+
         <h2 className="mt-2 md:mt-4 text-2xl md:text-4xl font-semibold text-neutral-200">
-          The Academic Credentials Authenticity Validator
+          Securing Academic Credentials for a Fraud-Free Future.
         </h2>
+
         <p className="mt-6 font-normal text-base md:text-lg text-neutral-300 max-w-xl mx-auto">
-          Secure your credentials, verify with confidence, and track authenticity in real-time.
+          Tamper-proof, instant, and universally verifiable certificates.
         </p>
 
         {/* Call-to-Action Button */}

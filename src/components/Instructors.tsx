@@ -7,37 +7,37 @@ const eduVerifyTeam = [
         id: 1,
         name: 'Trishna Paswan',
         designation: 'Frontend Developer',
-        image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+        image: '/images/trishna.jpg',
     },
     {
         id: 2,
         name: 'Tanvi',
         designation: 'Backend Developer',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+        image: '/images/tanvi.jpg',
     },
     {
         id: 3,
         name: 'Deeya',
         designation: 'Co-Creator',
-        image: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+        image: '/images/deeya.jpg',
     },
     {
         id: 4,
         name: 'Himanshi',
         designation: 'Backend Developer',
-        image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+        image: '/images/himanshi.jpg',
     },
     {
         id: 5,
         name: 'Krati',
         designation: 'Co-Creator',
-        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+        image: '/images/krati.jpg',
     },
     {
         id: 6,
         name: 'Maalvika',
         designation: 'Backend Developer',
-        image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+        image: '/images/malvika.jpg',
     },
 ];
 
