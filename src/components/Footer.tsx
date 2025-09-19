@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
+import { FaLinkedin, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="bg-black text-gray-400 py-16 border-t border-gray-800">
       <div className="max-w-6xl mx-auto grid gap-y-10 gap-x-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 px-4 sm:px-6 lg:px-8">
+
         {/* About Us */}
         <div className="text-center sm:text-left">
           <h2 className="text-white text-lg font-semibold mb-4">About EduVerify</h2>
@@ -19,47 +22,53 @@ function Footer() {
           <h2 className="text-white text-lg font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2">
             <li>
-              <a
+              <Link
                 href="/"
                 className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white transition-colors duration-300"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/features"
                 className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white transition-colors duration-300"
               >
                 Features
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/dashboard"
                 className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white transition-colors duration-300"
               >
                 Dashboard
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/contact"
                 className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white transition-colors duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
-        {/* Social Media */}
+        {/* Social */}
         <div className="text-center sm:text-left">
           <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
           <div className="flex flex-col space-y-2 sm:space-y-3">
-            <a href="#" className="hover:text-white transition-colors duration-300">LinkedIn</a>
-            <a href="#" className="hover:text-white transition-colors duration-300">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors duration-300">Facebook</a>
+            <a href="https://linkedin.com" className="hover:text-white transition-colors duration-300">
+              <FaLinkedin className="inline-block mr-1" /> LinkedIn
+            </a>
+            <a href="https://twitter.com" className="hover:text-white transition-colors duration-300">
+              <FaTwitter className="inline-block mr-1" /> Twitter
+            </a>
+            <a href="https://facebook.com" className="hover:text-white transition-colors duration-300">
+              <FaFacebookF className="inline-block mr-1" /> Facebook
+            </a>
           </div>
         </div>
 
@@ -77,7 +86,7 @@ function Footer() {
         © 2025 EduVerify. All rights reserved.
       </p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
