@@ -6,18 +6,31 @@ function UpcomingWebinars() {
 
     const upcomingFeatures = [
         {
-            title: 'AI-based Fraud Alerts',
-            description: 'Real-time AI detection for fraudulent certificates and anomalies.',
+            title: 'AI-Driven Fraud Detection',
+            description: 'Next-gen AI analyzes certificates in real-time to detect manipulations, deepfakes, or forged credentials instantly.',
         },
         {
-            title: 'DigiLocker Integration',
-            description: 'Direct import of govt-verified documents for seamless verification.',
+            title: 'Blockchain Verification Ledger',
+            description: 'Every student record stored on blockchain for tamper-proof verification, creating a transparent and auditable system.',
         },
         {
-            title: 'Mobile App Support',
-            description: 'Access EduVerify dashboards and verification tools on the go.',
+            title: 'Seamless DigiLocker & Govt ID Integration',
+            description: 'Directly import government-issued documents for instant, reliable verification without paperwork.',
+        },
+        {
+            title: 'Mobile App with Real-Time Insights',
+            description: 'EduVerify mobile app with push notifications, verification tracking, and instant alerts on suspicious activity.',
+        },
+        {
+            title: 'AI-Powered Analytics & Recommendations',
+            description: 'Smart dashboards provide insights on verification trends, flag high-risk patterns, and suggest automated actions.',
+        },
+        {
+            title: 'Cross-Institution Network',
+            description: 'Universities, colleges, and employers connected in one platform for quick verification across multiple organizations.',
         },
     ];
+    
 
     return (
         <div className="p-12 bg-gray-900">
@@ -25,7 +38,7 @@ function UpcomingWebinars() {
                 <div className="text-center">
                     <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">Upcoming Features</h2>
                     <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-                        Exciting Enhancements Coming Soon
+                        Exciting Enhancements Coming to EduVerify
                     </p>
                 </div>
 
@@ -34,7 +47,7 @@ function UpcomingWebinars() {
                         items={upcomingFeatures.map(feature => ({
                             title: feature.title,
                             description: feature.description,
-                            link: '/', // Later you can update this to the relevant page
+                            link: '/', // Update to relevant page if needed
                         }))} 
                     />    
                 </div>
